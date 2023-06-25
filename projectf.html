@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <style>
+            * {
+                    margin: 0px;
+                    padding: 0px;
+                    
+                }
+                .jrmt-image{
+                    background-image: url(./jrmt/1a.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 100%;
+                    height: 100vh;
+                    opacity: 100;
+                }
+                .C-color{
+                    color: white;
+                    font-size: 65px;
+                    font-style: italic;
+                    position: center;   
+                    text-align: center;
+                }
+                .C-h5{
+                    color: white;
+                    font-style: italic;
+                }.C-h3{
+                    color: white;
+                    font-style: italic;
+                }.C-h52{
+                    color: white;
+                    font-style: italic;
+                }.C-h32{
+                    color: white;
+                    font-style: italic;
+                }.t1{
+                    color: white;
+                    font-size: 28px;
+                }
+        </style>
+</head>
+    <body>
+            <div class="jrmt-image">
+                <br>
+                <br>
+                <br>
+                <div class="container">
+                    <h1 class="C-color">Inventory Monitoring</h1>
+                    <br>
+            	    <br>	
+                    <form id="itemForm">
+                        <div class="form-group">
+                            <label for="itemName"><h5 class="C-h5">Item Name:</h5></label>
+                            <input type="text" class="form-control" id="itemName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="itemQuantity"><h5 class="C-h52">Quantity:</h5></label>
+                            <input type="number" class="form-control" id="itemQuantity" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Item</button>
+                    </form>
+                    <br>
+            
+                    <table id="itemTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th><h3 class="C-h3">Total Products</h3></th>
+                                <th><h3 class="C-h32">Total Quantity</h3></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="t1"></tbody>
+                    </table>
+                </div>
+            </div>  
+    
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="scriptp.js"></script>
+    </body>
+</html>
